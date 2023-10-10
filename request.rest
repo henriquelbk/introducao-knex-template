@@ -1,0 +1,22 @@
+GET http://localhost:3003/ping
+###
+
+GET http://localhost:3003/bands
+###
+
+POST http://localhost:3003/bands
+Content-Type: application/json
+
+{
+    "id": "b002",
+    "name": "Taxi lunar"
+}
+###
+
+PUT http://localhost:3003/bands/b002
+Content-Type: application/json
+
+{
+    "newName": "Kelly Key"
+}
+###
