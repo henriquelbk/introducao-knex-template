@@ -1,3 +1,5 @@
+// BANDS
+
 GET http://localhost:3003/ping
 ###
 
@@ -18,5 +20,28 @@ Content-Type: application/json
 
 {
     "newName": "Kelly Key"
+}
+###
+
+// SONGS
+
+GET http://localhost:3003/songs
+###
+
+POST http://localhost:3003/songs
+Content-Type: application/json
+
+{
+    "id": "m003",
+    "name": "Shiny Happy People",
+    "band_id": "b001"
+}
+###
+
+PUT http://localhost:3003/songs/m003
+Content-Type: application/json
+
+{
+    "newName": "Losing my religion"
 }
 ###
